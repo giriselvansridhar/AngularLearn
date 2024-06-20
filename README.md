@@ -88,7 +88,64 @@ imort:[commonModule]
 
 
 
-9.Service that fetch the data from ASP.net
+9. Service that fetch the data from ASP.net
+
+
+ng g service <>
+
+
+@Injectable({
+  providedIn: 'root'
+})   //It can be used anyware in the application
+
+
+10. Service ----> API
+
+
+services.ts
+
+import HttpClient
+
+
+app.config.ts
+
+import ProvideHttp Client
+
+
+providers:
+[
+
+
+    provideHttpClient
+]
+
+
+
+export class BookService {
+
+
+  private apiUrl="https://localhost:7082";
+
+
+
+  constructor(private Http: HttpClient) {
+    
+   }
+}
+
+
+
+
+11. 
+
+
+services.ts
+
+
+imoprt Book
+import observable ----> Handles the request
+
+
 
 
 
